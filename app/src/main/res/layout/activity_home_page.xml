@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             xmlns:tools="http://schemas.android.com/tools"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="match_parent"
+                                             android:background="@drawable/activity_background"
+                                             tools:context="com.pradhanrishisharma.www.loginsample.HomePage">
+
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:src="@drawable/header"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintRight_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.0"/>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="444dp"
+        android:layout_height="200dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="0dp"
+        android:src="@drawable/res2"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintRight_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.22"/>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/horizontalScrollView1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="@string/department_of_rural_development"
+        android:textAlignment="center"
+        android:textSize="22sp"
+        tools:layout_editor_absoluteX="-279dp"
+        tools:layout_editor_absoluteY="-84dp"/>
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView1"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/imageView2"
+        android:scrollbars="none"
+        tools:layout_editor_absoluteX="258dp"
+        tools:layout_editor_absoluteY="-187dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/imgb1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:paddingLeft="10dp"
+                android:paddingRight="13dp"
+                android:paddingTop="8dp"
+                android:src="@drawable/img1"/>
+
+            <ImageButton
+                android:id="@+id/imgb2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@null"
+                android:paddingRight="13dp"
+                android:src="@drawable/img2"/>
+
+            <ImageButton
+                android:id="@+id/imgb3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@null"
+                android:paddingRight="13dp"
+                android:src="@drawable/img3"/>
+
+            <ImageButton
+                android:id="@+id/imgb4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@null"
+                android:paddingRight="13dp"
+                android:src="@drawable/img4"/>
+
+            <ImageButton
+                android:id="@+id/imgb5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@null"
+                android:paddingRight="13dp"
+                android:src="@drawable/img5"/>
+
+            <ImageButton
+                android:id="@+id/imgb6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@null"
+                android:paddingRight="13dp"
+                android:src="@drawable/img6"/>
+
+            <ImageButton
+                android:id="@+id/imgb7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:paddingRight="13dp"
+                android:src="@drawable/img7"/>
+
+            <ImageButton
+                android:id="@+id/imgb8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@null"
+                android:paddingRight="13dp"
+                android:src="@drawable/img8"/>
+
+            <ImageButton
+                android:id="@+id/imgb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@null"
+                android:paddingRight="13dp"
+                android:src="@drawable/img9"/>
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/horizontalScrollView1"
+        android:text="@string/department_of_land_resources"
+        android:textAlignment="center"
+        android:textSize="22sp"
+        tools:layout_editor_absoluteX="464dp"
+        tools:layout_editor_absoluteY="-126dp"/>
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView2"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:scrollbars="none"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="415dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/imgb10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:paddingLeft="10dp"
+                android:paddingRight="13dp"
+                android:paddingTop="6dp"
+                android:src="@drawable/img10"/>
+
+            <ImageButton
+                android:id="@+id/imgb11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@null"
+                android:paddingRight="13dp"
+                android:src="@drawable/img11"/>
+
+            <ImageButton
+                android:id="@+id/imgb12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@null"
+                android:paddingRight="13dp"
+                android:src="@drawable/img12"/>
+
+            <ImageButton
+                android:id="@+id/imgb13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@null"
+                android:paddingRight="13dp"
+                android:src="@drawable/img13"/>
+
+            <ImageButton
+                android:id="@+id/imgb14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@null"
+                android:paddingRight="13dp"
+
+                android:src="@drawable/img14"/>
+
+            <ImageButton
+                android:id="@+id/imgb15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@null"
+                android:paddingRight="13dp"
+                android:src="@drawable/img15"/>
+
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+
+</android.support.constraint.ConstraintLayout>
