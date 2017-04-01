@@ -23,6 +23,7 @@ import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.pradhanrishisharma.www.loginsample.NetwrokCheckModule.MinisterHome;
 import com.pradhanrishisharma.www.loginsample.NetwrokCheckModule.NetworkStateReceiver;
 import com.pradhanrishisharma.www.loginsample.NetwrokCheckModule.NetworkstateObject;
 
@@ -40,6 +41,7 @@ public class LoginActivity extends MybaseUIRef implements NetworkStateReceiver.N
      */
     public static boolean AsyncRes = false;
     public static boolean AsyncCancelled = false;
+    private Button mMinistry;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,7 +51,9 @@ public class LoginActivity extends MybaseUIRef implements NetworkStateReceiver.N
         mEmailView = (AutoCompleteTextView) findViewById(R.id.email);
         populateAutoComplete();
 
+        mMinistry = (Button) findViewById(R.id.ministerLogin);
         mGuestLogin = (Button) findViewById(R.id.guestLogin);
+
 
         /**
          * Checking network state . Merging krishna's code here
@@ -115,6 +119,15 @@ public class LoginActivity extends MybaseUIRef implements NetworkStateReceiver.N
                 startActivity(guesthome);
             }
         });
+
+        mMinistry.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent ministry = new Intent(LoginActivity.this, MinisterHome.class);
+                startActivity(ministry);
+            }
+        });
+
     }
 
 

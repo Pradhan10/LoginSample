@@ -35,6 +35,10 @@
         </activity>
         <activity android:name=".DescAndEligibility">
         </activity>
+        <activity android:name="com.pradhanrishisharma.www.loginsample.NetwrokCheckModule.MinisterHome">
+
+
+        </activity>
     </application>
 
 </manifest>
