@@ -15,6 +15,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
+import android.widget.Button;
 import android.widget.EditText;
 
 import java.util.ArrayList;
@@ -50,6 +51,7 @@ public class MybaseUIRef extends AppCompatActivity implements LoaderManager.Load
     public EditText mPasswordView;
     public View mProgressView;
     public View mLoginFormView;
+    public Button mGuestLogin;
 
     /**
      * Shows the progress UI and hides the login form.

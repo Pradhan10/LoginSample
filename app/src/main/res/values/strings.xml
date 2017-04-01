@@ -16,4 +16,36 @@
     <string name="auth_failed">Auth Failed</string>
     <string name="department_of_rural_development">Department of Rural Development</string>
     <string name="department_of_land_resources">Department of Land Resources</string>
+    <string name="title_activity_yojna">YojnaActivity</string>
+    <!-- URLS and yojna Desc-->
+    <string name="nsap">The National Social Assistance Programme (NSAP) is a welfare programme being administered by the Ministry of Rural Development.NSAP represents a significant step towards the fulfilment of the Directive Principles of State Policy enshrined in the Constitution of India which enjoin upon the State to undertake within its means a number of welfare measures.</string>
+    <string name="pmgsy">The Pradhan Mantri Gram Sadak Yojana (PMGSY), was launchedto provide connectivity to unconnected Habitations as part of a poverty reduction strategy. The primary objective of the PMGSY is to provide Connectivity, by way of an All-weather Road  to the eligible unconnected Habitations in the rural areas with a population of 500 persons and above in Plain areas. </string>
+    <string name="nrum">The vision statement of SPMRM is "Development of a cluster of villages that preserve and nurture the essence of rural community life with focus on equity and inclusiveness without compromising with the facilities perceived to be essentially urban in nature, thus creating a cluster of "Rurban villages". </string>
+    <string name="day_nrlm">The mission would aim at providing shelters equipped with essential services to the urban homeless in a phased manner.In addition,the mission would also address livelihood concerns of the urban street vendors by facilitating access to suitable spaces,institutional credit,social security and skills to the urban street vendors for accessing emerging market opportunities.</string>
+    <string name="ddu_gky">DDU-GKY is uniquely focused on rural youth between the ages of 15 and 35 years from poor families. As a part of the Skill India campaign, it plays an instrumental role in supporting the social and economic programs of the government like the Make In India, Digital India, Smart Cities and Start-Up India, Stand-Up India campaigns.</string>
+    <string name="pmay">Pradhan Mantri Gramin Awas Yojana is a renamed and improved version of Indira Awas Yojana rural housing scheme.Under the new rural housing scheme, the central government will provide a financial assistance of Rs. 120000/- for constructing the home. An additional assistance of Rs. 12000 will also be provided to construct toilets in households.</string>
+    <string name="mgnrega">National Rural Employment Guarantee Act, later renamed as the "Mahatma Gandhi National Rural Employment Guarantee Act" (or, MGNREGA), is an Indian labour law and social security measure that aims to guarantee the right to work. It aims to enhance livelihood security in rural areas by providing at least 100 days of wage employment in a financial year to every household whose adult members volunteer to do unskilled manual work.</string>
+    <string name="saanjhi">The goal is to develop three Adarsh Grams by March 2019,  Thereafter, five such Adarsh Grams (one per year) will be selected and developed by 2024.  The SAANJHI will keep the soul of rural India alive while providing its people with quality access to basic amenities and opportunities to enable them to shape their own destiny.</string>
+    <string name="ddp">The basic object of the programme is to minimise the adverse effect of drought and control desertification through rejuvenation of natural resource base of the identified desert areas.</string>
+    <string name="dpap">The basic objective of the programme is to minimise the adverse effects of drought on production of crops and livestock and productivity of land, water and human resources ultimately leading to drought proofing of the affected areas.</string>
+    <string name="hariyali">To involve village communities in the implementation of watershed projects under all the area development programmes namely, Integrated Wastelands Development Programme (IWDP), Drought Prone Areas Programme (DPAP) and Desert Development Programme (DDP), the Guidelines for Watershed Development were adopted w.e.f.1.4.1995, and subsequently revised in August 2001.</string>
+    <string name="gwd">The Watershed approach has conventionally aimed at treating degraded lands with the help of low cost and locally accessed technologies such as in-situ soil and moisture conservation measures, afforestation etc. and through a participatory approach that seeks to secure close involvement of the user-communities.</string>
+    <string name="ips">To facilitate/attract/channelise/mobilise resources from financial institutions, banks, corporate bodies including user industries and other entrepreneurs for development of wastelands in non-forest areas belonging to Central and State Governments, panchayats, village communities, private farmers, etc.</string>
+    <string name="tdet">To operationalise appropriate, cost effective and proven technologies for development of various categories of wastelands specially problem lands affected by soil erosion, land degradation, salinity, alkalinity, waterlogging etc.</string>
+
+    <string name="dduURL">https://www.akshayush.orgfree.com/barGraph_sample.html</string>
+    <string name="nsapURL">https://www.akshayush.orgfree.com/pie_sample.html</string>
+    <string name="pmgsyURL">https://www.akshayush.orgfree.com/PMGSY-Physical.html</string>
+    <string name="nrumURL">https://www.akshayush.orgfree.com/err.html</string>
+    <string name="day_nrlmURL">https://www.akshayush.orgfree.com/NRLM.html</string>
+    <string name="pmayURL">https://www.akshayush.orgfree.com/err.html</string>
+    <string name="mgnregaURL">https://www.akshayush.orgfree.com/err.html</string>
+    <string name="saanjhiURL">https://www.akshayush.orgfree.com/err.html</string>
+    <string name="ddpURL">https://www.akshayush.orgfree.com/err.html</string>
+    <string name="dpapURL">https://www.akshayush.orgfree.com/err.html</string>
+    <string name="hariyaliURL">https://www.akshayush.orgfree.com/err.html</string>
+    <string name="gwdURL">https://www.akshayush.orgfree.com/err.html</string>
+    <string name="ipsURL">https://www.akshayush.orgfree.com/err.html</string>
+    <string name="tdetURL">https://www.akshayush.orgfree.com/err.html</string>
+
 </resources>

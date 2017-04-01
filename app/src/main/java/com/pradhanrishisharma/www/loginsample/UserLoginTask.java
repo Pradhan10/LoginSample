@@ -10,6 +10,7 @@ import com.google.firebase.auth.AuthResult;
 
 import static android.content.ContentValues.TAG;
 import static com.pradhanrishisharma.www.loginsample.FirebaseReferences.mAuth;
+import static com.pradhanrishisharma.www.loginsample.LoginActivity.AsyncRes;
 import static com.pradhanrishisharma.www.loginsample.MybaseUIRef.DUMMY_CREDENTIALS;
 
 /**
@@ -22,7 +23,10 @@ public class UserLoginTask extends AsyncTask<Void, Void, Boolean> {
     private final String mEmail;
     private final String mPassword;
 
+    private boolean flag = false;
+
     UserLoginTask(String email, String password) {
+        Log.e("UserLoginTask", "AsyncTask constructor");
         mEmail = email;
         mPassword = password;
     }
@@ -44,7 +48,12 @@ public class UserLoginTask extends AsyncTask<Void, Void, Boolean> {
                             // signed in user can be handled in the listener.
                             if (!task.isSuccessful()) {
                                 Log.w(TAG, "signInWithEmail:failed", task.getException());
+
                                 //Toast.makeText(this, R.string.auth_failed, Toast.LENGTH_SHORT).show();
+                            } else {
+
+                                AsyncRes = true;
+
                             }
 
                             // ...
@@ -70,8 +79,8 @@ public class UserLoginTask extends AsyncTask<Void, Void, Boolean> {
 
     @Override
     protected void onPostExecute(final Boolean success) {
-
-        LoginActivity.AsyncRes = success;
+        Log.e("UserLoginTask", "onPostExecute called val:" + " " + success);
+        AsyncRes = success;
         /**
          * Checking resut on main UI thread and displaying revelant message
          */

@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/background">
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/linear_layout_1">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="245dp"
+            android:src="@drawable/aushikimage"
+            android:id="@+id/image_view_1"
+            android:scaleType="fitStart"/>
+
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linear_layout_1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Department of Rural Development"
+            android:textSize="22sp"
+            android:textAlignment="center"
+            android:id="@+id/text_view_1"
+            android:layout_marginTop="22dp"
+            android:textColor="@android:color/black"/>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_view_1"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/aushikimg1"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@null"/>
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/aushikimg2"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@null"/>
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/aushikimg3"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@null"/>
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/aushikimg4"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@null"/>
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/aushikimg5"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@null"/>
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/aushikimg6"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@null"/>
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/aushikimg7"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@null"/>
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/aushikimg8"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@null"/>
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/aushikimg9"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@null"/>
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Department of Land Resources"
+            android:textSize="22sp"
+            android:textAlignment="center"
+            android:id="@+id/text_view_2"
+            android:layout_marginTop="140dp"
+            android:textColor="@android:color/black"/>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_view_2"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/aushikimg10"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@null"/>
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/aushikimg11"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@null"/>
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/aushikimg12"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@null"/>
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/aushikimg13"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@null"/>
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/aushikimg14"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@null"/>
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/aushikimg15"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@null"/>
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

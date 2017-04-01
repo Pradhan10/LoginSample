@@ -2,7 +2,9 @@ package com.pradhanrishisharma.www.loginsample;
 
 import android.annotation.TargetApi;
 import android.content.Intent;
+import android.content.IntentFilter;
 import android.content.pm.PackageManager;
+import android.net.ConnectivityManager;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -21,6 +23,8 @@ import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.pradhanrishisharma.www.loginsample.NetwrokCheckModule.NetworkStateReceiver;
+import com.pradhanrishisharma.www.loginsample.NetwrokCheckModule.NetworkstateObject;
 
 import static android.Manifest.permission.READ_CONTACTS;
 import static com.pradhanrishisharma.www.loginsample.FirebaseReferences.mAuth;
@@ -29,12 +33,12 @@ import static com.pradhanrishisharma.www.loginsample.FirebaseReferences.mAuthLis
 /**
  * A login screen that offers login via email/password.
  */
-public class LoginActivity extends MybaseUIRef {
+public class LoginActivity extends MybaseUIRef implements NetworkStateReceiver.NetworkStateReceiverListener {
 
     /**
      * Checking value of boolean variables and performing required UI function
      */
-    public static boolean AsyncRes = true;
+    public static boolean AsyncRes = false;
     public static boolean AsyncCancelled = false;
 
     @Override
@@ -45,6 +49,21 @@ public class LoginActivity extends MybaseUIRef {
         mEmailView = (AutoCompleteTextView) findViewById(R.id.email);
         populateAutoComplete();
 
+        mGuestLogin = (Button) findViewById(R.id.guestLogin);
+
+        /**
+         * Checking network state . Merging krishna's code here
+         */
+
+        //State change listener
+        NetworkstateObject.mNetwork = new NetworkStateReceiver();
+        NetworkstateObject.mNetwork.addListener(this);
+        this.registerReceiver(NetworkstateObject.mNetwork, new IntentFilter(ConnectivityManager.CONNECTIVITY_ACTION));
+
+
+        /**
+         * Merging ends
+         */
         mAuth = FirebaseAuth.getInstance();
 
         /**
@@ -88,8 +107,25 @@ public class LoginActivity extends MybaseUIRef {
 
         //mLoginFormView = findViewById(R.id.login_form);
         mProgressView = findViewById(R.id.login_progress);
+
+        mGuestLogin.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent guesthome = new Intent(LoginActivity.this, HomePage.class);
+                startActivity(guesthome);
+            }
+        });
     }
 
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        if (mAuthListener != null) {
+            mAuth.removeAuthStateListener(mAuthListener);
+        }
+
+    }
 
     @Override
     public void onStop() {
@@ -130,6 +166,27 @@ public class LoginActivity extends MybaseUIRef {
      * <--------------------------------------------- ACTIVITY LIFE CYCLE METHODS ENDS -----------------------------></--------------------------------------------->
      */
 
+    /**
+     * Implementing methods of interface
+     */
+
+    @Override
+    public void networkAvailable() {
+
+    }
+
+    @Override
+    public void networkUnavailable() {
+
+        //Alert user to connect internet
+        Toast.makeText(LoginActivity.this, "Internet connection Unavailabel.", Toast.LENGTH_SHORT).show();
+
+
+    }
+
+    /**
+     * interface methods ends
+     */
     private void populateAutoComplete() {
         if (!mayRequestContacts()) {
             return;
@@ -224,10 +281,13 @@ public class LoginActivity extends MybaseUIRef {
             mAuthTask = new UserLoginTask(email, password);
             mAuthTask.execute((Void) null);
             showProgress(false);
-            if (AsyncRes) {
+
+            if (AsyncRes == true) {
+                Log.e("Login Activity", "AsyncRes value if" + AsyncRes);
                 Intent home = new Intent(this, HomePage.class);
                 startActivity(home);
             } else {
+                Log.e("Login Activity", "AsyncRes value else" + AsyncRes);
                 mPasswordView.setError(getString(R.string.error_incorrect_password));
                 mPasswordView.requestFocus();
                 Toast.makeText(this, R.string.auth_failed,
@@ -246,7 +306,7 @@ public class LoginActivity extends MybaseUIRef {
     }
 
     private boolean isPasswordValid(String password) {
-        //TODO: Replace this with your own logic
+
         return password.length() > 4;
     }
 
