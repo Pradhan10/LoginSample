@@ -35,10 +35,20 @@
         </activity>
         <activity android:name=".DescAndEligibility">
         </activity>
+
         <activity android:name="com.pradhanrishisharma.www.loginsample.NetwrokCheckModule.MinisterHome">
 
 
         </activity>
+
+        <activity android:name=".HalfPieChartActivity"></activity>
+
+        <activity android:name=".BarChartActivitySinus"></activity>
+        <activity android:name=".CandleStickChartActivity"></activity>
+        <activity android:name=".InvertedLineChartActivity"></activity>
+        <activity android:name=".RealtimeLineChartActivity"></activity>
+        <activity android:name=".PieChartActivity"></activity>
+        <activity android:name=".WebviewActivity"></activity>
     </application>
 
 </manifest>

@@ -19,6 +19,7 @@ public class DescAndEligibility extends AppCompatActivity {
         Intent intent = getIntent();
         Integer id = intent.getIntExtra("mDescID", 1);
 
+        //TODO : Implement yojna eligibility according to criteria . Check multiple parameters and return True or False.
         setContentView(R.layout.activity_desc_and_eligibility);
         mDesc = (TextView) findViewById(R.id.yojnaDesc);
         switch (id) {

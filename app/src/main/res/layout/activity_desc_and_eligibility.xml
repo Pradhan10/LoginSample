@@ -4,11 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/activity_background"
     tools:context="com.pradhanrishisharma.www.loginsample.DescAndEligibility">
 
     <TextView
         android:id="@+id/yojnaDesc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"/>
+        android:text="TextView"
+        android:textSize="22sp"/>
 </android.support.constraint.ConstraintLayout>
