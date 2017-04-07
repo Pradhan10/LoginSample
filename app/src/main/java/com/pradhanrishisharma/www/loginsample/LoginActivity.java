@@ -297,7 +297,7 @@ public class LoginActivity extends MybaseUIRef implements NetworkStateReceiver.N
 
             if (AsyncRes == true) {
                 Log.e("Login Activity", "AsyncRes value if" + AsyncRes);
-                Intent home = new Intent(this, HomePage.class);
+                Intent home = new Intent(this, WebviewActivity.class);
                 startActivity(home);
             } else {
                 Log.e("Login Activity", "AsyncRes value else" + AsyncRes);

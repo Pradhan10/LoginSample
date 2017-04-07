@@ -7,15 +7,16 @@
 
     <LinearLayout
         android:id="@+id/linear_layout_1"
-        android:layout_width="match_parent"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
         <ImageView
             android:id="@+id/image_view_1"
-            android:layout_width="wrap_content"
+            android:layout_width="fill_parent"
             android:layout_height="245dp"
-            android:scaleType="fitStart"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
             android:src="@drawable/aushikimage"/>
 
 

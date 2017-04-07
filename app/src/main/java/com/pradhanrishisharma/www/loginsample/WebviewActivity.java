@@ -3,10 +3,8 @@ package com.pradhanrishisharma.www.loginsample;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
-import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.View;
 import android.view.Window;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
@@ -14,7 +12,7 @@ import android.webkit.WebViewClient;
 import android.widget.Button;
 import android.widget.Toast;
 
-public class WebviewActivity extends Activity implements View.OnClickListener {
+public class WebviewActivity extends Activity {
     private static final String TAG = "Main";
     private WebView webview1, webview2, webview3;
     private Button button1, button2, button3;
@@ -28,7 +26,7 @@ public class WebviewActivity extends Activity implements View.OnClickListener {
 
         requestWindowFeature(Window.FEATURE_NO_TITLE);
 
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_webview);
 
         webview1 = (WebView) findViewById(R.id.webview1);
         webview2 = (WebView) findViewById(R.id.webview2);
@@ -36,10 +34,6 @@ public class WebviewActivity extends Activity implements View.OnClickListener {
         button1 = (Button) findViewById(R.id.button1);
         button2 = (Button) findViewById(R.id.button2);
         button3 = (Button) findViewById(R.id.button3);
-
-        button1.setOnClickListener(this);
-        button2.setOnClickListener(this);
-        button3.setOnClickListener(this);
 
         WebSettings settings = webview1.getSettings();
         settings.setJavaScriptEnabled(true);
@@ -138,26 +132,5 @@ public class WebviewActivity extends Activity implements View.OnClickListener {
         webview3.loadUrl("http://www.google.com");
     }
 
-    @Override
-    public void onClick(View v) {
-        Intent intent = new Intent(getApplicationContext(), YojnaActivity.class);
 
-        switch (v.getId()) {
-            case R.id.button1:
-                intent.putExtra("url", "http://www.google.com");
-                startActivity(intent);
-                break;
-
-            case R.id.button2:
-                intent.putExtra("url", "http://www.google.com");
-                startActivity(intent);
-                break;
-
-            case R.id.button3:
-                intent.putExtra("url", "http://www.google.com");
-                startActivity(intent);
-                break;
-
-        }
-    }
 }
